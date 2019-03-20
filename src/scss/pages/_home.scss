@@ -2,3 +2,12 @@
   display: flex;
   justify-content: flex-start;
 }
+
+a {
+  &:link,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  } 
+}

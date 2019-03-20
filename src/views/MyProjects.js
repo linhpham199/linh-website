@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import ProjectCard from '../components/ProjectCard';
 
 class MyProjects extends Component {
   render() {
     return (
       <div>
-        These are my projects.
+        <ProjectCard name="Personal Training Company" link="#"/>
+        <ProjectCard name="Personal Training Company" link="#"/>
+        <ProjectCard name="Personal Training Company" link="#"/>
+        <ProjectCard name="Personal Training Company" link="#"/>
+        <ProjectCard name="Personal Training Company" link="#"/> 
+        <ProjectCard name="Personal Training Company" link="#"/>                        
+        <ProjectCard name="Personal Training Company" link="#"/>                                                       
       </div>
     );
   }
