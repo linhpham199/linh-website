@@ -1,7 +1,7 @@
 .side-bar {
   background-color: aqua;
-  height: 100vh;
-  width: 25vw;
+  height: 20vh;
+  width: 100vw;
 
   &__list {
     list-style: none;
@@ -10,5 +10,12 @@
   &__list-item {
     text-transform: uppercase;
     
+  }
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    height: 100vh;
+    width: 25vw;
   }
 }

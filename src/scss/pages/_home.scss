@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -8,6 +9,11 @@ a {
   &:visited,
   &:hover {
     text-decoration: none;
-    cursor: pointer;
   } 
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
 }
