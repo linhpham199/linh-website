@@ -1,0 +1,48 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    width: 90%;
+  }
+
+  &___label {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+    border: 1px solid black;
+    padding: .5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__container {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    &__container {
+      width: 55%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .form {
+    &__container {
+      width: 45%;
+    }
+  }
+}
