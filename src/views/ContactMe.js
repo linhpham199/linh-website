@@ -51,9 +51,7 @@ class ContactMe extends Component {
   }
 
   render() {
-    var shown = {
-			display: this.state.shown ? "block" : "none"
-    };
+    const { shown } = this.state
     const messageTitle = "Your message has been sent!"
     const messageContent = "I will get back to you as soon as possible. Thank you!"
 
@@ -75,10 +73,15 @@ class ContactMe extends Component {
           <p className="form__container">
             <button type="submit" className="form__button" onClick={this.handleSubmit}>Send</button>
           </p>
-          <div style={ shown } className="form__message">
-            <h4>{messageTitle}</h4>
-            <p>{messageContent}</p>
-        </div>
+          {
+            shown && (
+              <div className="form__message">
+                <h4>{messageTitle}</h4>
+                <p>{messageContent}</p>
+              </div>
+            )
+          }
+          
         </form>
         
       </div>

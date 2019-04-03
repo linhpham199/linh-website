@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tag = ({ name }) => (
-  <div className={name}>
+  <div className="tag">
     {name}
   </div>
 )

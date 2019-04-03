@@ -12,10 +12,10 @@ class ProjectCard extends Component {
 
         <div className="card__side card__side--back">
           <div className="card__intro">
-            Brief introduction
+            {this.props.description}
           </div>
           <div className="card__link">
-            <a href={this.props.link} className="card__link--mobile" target="_blank" rel="noopener noreferrer">More info</a>
+            <object><a href={this.props.link} className="card__link--mobile" target="_blank" rel="noopener noreferrer">More info</a></object>
           </div>
           <div className="card__tag">
             {this.props.languages.map((language, i) => {

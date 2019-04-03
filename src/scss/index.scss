@@ -1,6 +1,9 @@
+@import "abstracts/variables";
+
 @import "layout/side-bar";
 @import "layout/main-menu";
 @import "layout/cards-collection";
+@import "layout/about-me";
 
 @import "pages/home";
 
@@ -10,3 +13,5 @@
 @import "components/card";
 @import "components/tag";
 @import "components/form";
+@import "components/university";
+
