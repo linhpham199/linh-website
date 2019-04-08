@@ -2,7 +2,8 @@
   height: 25rem;
   width: 25rem;
   margin: 1.5rem;
-  position: relative;
+  position: relative;  
+  
 
   &__link {
     width: 100%;
@@ -14,10 +15,11 @@
       pointer-events: none;
     }
     &--mobile {
-      border: 1px solid black;
+      // border: 1px solid black;
+      color: #484F59;    
+      text-transform: uppercase;
       padding: 0 1rem;
       pointer-events: auto;  
-      box-shadow: .5rem .5rem 1rem coral           
     }
   }
 
@@ -28,23 +30,51 @@
     text-align: center;    
     backface-visibility: hidden;
     transition: all .4s;
+    border-radius: 1rem;
+    box-shadow: 1.5rem 1.5rem 1.5rem #F0D2E1;    
+    color: #484F59;
+    
 
     &--front {
-      background-color: yellow;
+      background-color: $primary-color;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: $font-roboto;
       font-size: 2rem;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
+
+      &-0 {
+        background-color: $card-color-1;
+                
+      }
+
+      &-1 {
+        background-color: $card-color-2;        
+      }
+
+      &-2 {
+        background-color: $card-color-3;
+      }
     }
 
     &--back {
-      background-color: yellowgreen;
+      background-color: white;
       transform: rotateY(180deg);
       display: flex;  
       flex-wrap: wrap;    
+
+      &-0 {
+        border: 2px solid $card-color-1;
+      }
+
+      &-1 {
+        border: 2px solid $card-color-2;        
+      }
+
+      &-2 {
+        border: 2px solid $card-color-3;        
+      }
     }
   }
 

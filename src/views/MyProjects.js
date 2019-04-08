@@ -22,7 +22,7 @@ class MyProjects extends Component {
       <div className="cards-collection">
         {
           myProjects.map((prj, i) => {
-            return <ProjectCard key={i} name={prj.name} link={prj.link} languages={prj.languages} description={prj.description} />
+            return <ProjectCard key={i} order={i} name={prj.name} link={prj.link} languages={prj.languages} description={prj.description} />
           })
         }                                                     
       </div>
