@@ -23,6 +23,12 @@
     }
   }
 
+  &__title {
+    background-color: white;
+    padding: 0 1.2rem;
+    border-radius: .5rem;
+  }
+
   &__side {
     position: absolute;
     height: 25rem;
@@ -31,7 +37,7 @@
     backface-visibility: hidden;
     transition: all .4s;
     border-radius: 1rem;
-    box-shadow: 1.5rem 1.5rem 1.5rem #F0D2E1;    
+    box-shadow: 1.5rem 1.5rem 1.5rem $secondary-color;    
     color: #484F59;
     
 
@@ -44,17 +50,39 @@
       font-weight: 600;
       text-transform: uppercase;
 
-      &-0 {
-        background-color: $card-color-1;
-                
+      &-fr {
+        // background-color: $card-color-1;
+        background-image: url(../img/food-card.jpg);
+        background-size: cover;
       }
 
-      &-1 {
-        background-color: $card-color-2;        
+      &-wpm {
+        background-image: url(../img/wpm-card.jpg);
+        background-size: cover;
       }
 
-      &-2 {
-        background-color: $card-color-3;
+      &-fork {
+        background-image: url(../img/fork-card.jpg);
+        background-size: cover;
+        background-position: right;
+      }
+
+      &-pg {
+        background-image: url(../img/pg-card.jpg);
+        background-size: cover;
+        background-position: center;        
+      }
+
+      &-pb {
+        background-image: url(../img/pb-card.jpg);
+        background-size: cover;
+        background-position: right;
+      }
+
+      &-tc {
+        background-image: url(../img/tc-card.jpg);
+        background-size: cover;
+        // background-position: right;
       }
     }
 
@@ -63,18 +91,7 @@
       transform: rotateY(180deg);
       display: flex;  
       flex-wrap: wrap;    
-
-      &-0 {
-        border: 2px solid $card-color-1;
-      }
-
-      &-1 {
-        border: 2px solid $card-color-2;        
-      }
-
-      &-2 {
-        border: 2px solid $card-color-3;        
-      }
+      border: 2px solid $primary-color;
     }
   }
 
