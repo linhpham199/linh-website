@@ -54,10 +54,12 @@ class ContactMe extends Component {
     const { shown } = this.state
     const messageTitle = "Your message has been sent!"
     const messageContent = "I will get back to you as soon as possible. Thank you!"
+    const greetings = "Drop me a message :)"
 
     return (
       <div>
         <form className="form">
+          <p className="form__title">{greetings}</p>
           <p className="form__container">
             <label htmlFor="name" className="form__label">Name</label>
             <input className="form__input" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} required/>
@@ -68,7 +70,7 @@ class ContactMe extends Component {
           </p>
           <p className="form__container">
             <label htmlFor="message" className="form__label">Leave me a message</label>
-            <textarea className="form__input" name="message" rows="7" value={this.state.message} onChange={this.handleChange}></textarea>
+            <textarea className="form__text-area" name="message" rows="7" value={this.state.message} onChange={this.handleChange}></textarea>
           </p>
           <p className="form__container">
             <button type="submit" className="form__button" onClick={this.handleSubmit}>Send</button>
