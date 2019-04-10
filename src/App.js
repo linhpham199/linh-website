@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 import AboutMe from './views/AboutMe';
 import MyProjects from './views/MyProjects';
 import ContactMe from './views/ContactMe';
@@ -38,9 +38,9 @@ class App extends Component {
           </div>
           
           <div className="main-menu">
-            <Route exact path="/" component={AboutMe} />
-            <Route path="/projects/" component={MyProjects} />
-            <Route path="/contact/" component={ContactMe} />
+            <HashRouter exact path="/" component={AboutMe} />
+            <HashRouter path="/projects/" component={MyProjects} />
+            <HashRouter path="/contact/" component={ContactMe} />
           </div>
         </Router>
 
