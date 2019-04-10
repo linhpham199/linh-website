@@ -3,23 +3,92 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3rem;
+
+  &__title {
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 
   &__container {
     width: 90%;
+    padding-bottom: 1rem;
+
+    &--btn {
+      display: flex;
+      justify-content: center;
+    }
   }
 
-  &___label {
+  &__label {
     width: 100%;
   }
 
   &__input {
     width: 100%;
+    height: 4rem;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border: 1px solid $gray-1;
+    margin-top: .5rem;    
+
+    &:focus {
+      outline-color: $primary-color;
+    }
+
+    &:focus:invalid {
+      outline-color: red;
+    }
+  }
+
+  &__text-area {
+    margin-top: .5rem;    
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid $gray-1;    
+
+    &:focus {
+      outline-color: $primary-color;
+    }
   }
 
   &__button {
-    width: 100%;
-    border: 1px solid black;
-    padding: .5rem 0;
+    background-color: $secondary-color;
+    padding: 0 1.6rem;
+    height: 3.6rem;
+    margin: 2rem 0;
+    color: $white-1;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 4px;
+
+    &:focus {
+      outline-color: $primary-color;
+    }
+
+   
+
+    &:disabled {
+      background-color: $gray-1;
+      border: 1px solid $gray-1;
+    }
+  }
+
+  &__message {
+    margin: 2rem;
+    text-align: center;
+    background: $secondary-color;
+    color: $white-1;
+    padding: 2rem;
   }
 }
 
@@ -28,6 +97,19 @@
     &__container {
       width: 70%;
     }
+
+    &__title {
+      font-size: 4rem;
+    }
+  }
+
+  .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveIn .8s ease-in;
   }
 }
 
