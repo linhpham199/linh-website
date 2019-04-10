@@ -2,10 +2,11 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://linhpham199.github.io/",
+  "homepage": "https://linhpham199.github.io/",
   "dependencies": {
     "create-react-app": "^2.1.8",
     "firebase": "^5.9.2",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "npm": "^6.9.0",
     "react": "^16.8.4",
@@ -20,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
