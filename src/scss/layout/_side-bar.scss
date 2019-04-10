@@ -15,7 +15,7 @@
   }
 
   &__list-item {
-    color: $white-1;    
+    color: #FBF4D7;    
     text-transform: uppercase;
     padding: 0 2rem;
   }
@@ -29,7 +29,7 @@
   }
 
   &__icon-item {
-    color: $white-1;
+    color: #FBF4D7;
     font-size: 2.4rem;
     margin: 0 1rem;
   }
@@ -57,7 +57,7 @@
 
       &:link,
       &:visited {
-        background-image: linear-gradient(60deg, transparent 0%, transparent 50%, $white-1 50%);
+        background-image: linear-gradient(60deg, transparent 0%, transparent 50%, #FBF4D7 50%);
         background-size: 250%;
         transition: all .3s;          
       }
@@ -74,9 +74,6 @@
       padding: 1rem 0;
     }
 
-    &__icons {
-    }
-
     &__icon-item {
       font-size: 3.4rem;
       margin: 0 3rem;
@@ -84,7 +81,7 @@
 
       &:hover,
       &:active {
-        transform: translateY(-.5rem) translateX(.5rem);
+        transform: translateY(-.5rem) translateX(.5rem) scale(1.2);
       }
     }
   }

@@ -12,6 +12,11 @@
 @media (min-width: 768px) {
   .about-me {
     padding: 0 22%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: moveInRight 1s ease-out;
   }
 
   

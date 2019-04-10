@@ -7,11 +7,11 @@ class AboutMe extends Component {
     return (
       <div className="about-me">
         <div>
-          This is about me.
-          This is also about me
+          <h2 className="heading-primary">Hello, I'm Linh. </h2>
+          Currently I am a student of Haaga-Helia University of Applied Sciences, major in software development. I am working my way to become a web developer in the near future.
         </div>
         <div className="my-education">
-          <h2>Education</h2>
+          <h2 className="heading-primary">Education</h2>
           <University 
             name="Haaga-Helia University of Applied Sciences"
             startYear="2017"
@@ -27,7 +27,7 @@ class AboutMe extends Component {
             major="International Business Economics" />
         </div>
         <div className="my-languages">
-        <h2>Languages</h2>
+        <h2 className="heading-primary">Languages</h2>
           <div className="my-languages__list">
             <Language language="English" proficiency="Professional" />
             <Language language="Finnish" proficiency="Very basic" />

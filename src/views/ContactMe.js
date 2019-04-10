@@ -9,6 +9,7 @@ class ContactMe extends Component {
       email: "",
       message: "",
       shown: false,
+      validated: false,
     }
   }
 
@@ -16,14 +17,17 @@ class ContactMe extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
-    console.log(this.state)
+
+    if (e.target.name === 'email') {
+       this.setState({validated: this.validateEmail(this.state.email)})
+    }
   }
 
   handleSubmit = (e) => {
     e.preventDefault()
 
     const { name, email, message } = this.state
-    
+
     const newMessagesRef = db.ref('messages').push()
     newMessagesRef.set({
       name,
@@ -44,20 +48,26 @@ class ContactMe extends Component {
         console.log(this.state.shown)
         this.setState({shown: !this.state.shown})
       }.bind(this),
-      3000
+      4000
     )
 
     
   }
 
+  validateEmail = email => {
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(String(email).toLowerCase())
+  }
+
   render() {
-    const { shown } = this.state
+    const { shown, name, email, message, validated } = this.state
     const messageTitle = "Your message has been sent!"
     const messageContent = "I will get back to you as soon as possible. Thank you!"
     const greetings = "Drop me a message :)"
+    const disableBtn = validated || !name || !email || !message 
 
     return (
-      <div>
+      <div className="container">
         <form className="form">
           <p className="form__title">{greetings}</p>
           <p className="form__container">
@@ -66,14 +76,13 @@ class ContactMe extends Component {
           </p>
           <p className="form__container">
             <label htmlFor="email" className="form__label">Email address</label>
-            <input className="form__input" type="email" name="email" id="email" value={this.state.emal} onChange={this.handleChange} required/>
+            <input className="form__input" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange} required/>
+          {console.log(this.validateEmail(this.state.email))}
+          {console.log("BTN " + disableBtn + " name " + !name + " email " + !email + " message " + !message)}
           </p>
           <p className="form__container">
-            <label htmlFor="message" className="form__label">Leave me a message</label>
+            <label htmlFor="message" className="form__label">Your message</label>
             <textarea className="form__text-area" name="message" rows="7" value={this.state.message} onChange={this.handleChange}></textarea>
-          </p>
-          <p className="form__container">
-            <button type="submit" className="form__button" onClick={this.handleSubmit}>Send</button>
           </p>
           {
             shown && (
@@ -83,6 +92,10 @@ class ContactMe extends Component {
               </div>
             )
           }
+          <p className="form__container--btn">
+            <button type="submit" className="form__button" disabled={disableBtn} onClick={this.handleSubmit}>Send</button>
+          </p>
+          
           
         </form>
         
