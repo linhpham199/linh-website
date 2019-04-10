@@ -75,8 +75,6 @@
       outline-color: $primary-color;
     }
 
-   
-
     &:disabled {
       background-color: $gray-1;
       border: 1px solid $gray-1;
@@ -89,6 +87,8 @@
     background: $secondary-color;
     color: $white-1;
     padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba($secondary-color ,0.16), 0 3px 6px rgba($secondary-color,0.23);    
   }
 }
 
