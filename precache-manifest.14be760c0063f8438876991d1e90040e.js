@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/background-side.704cb45a.jpg"
   },
   {
-    "revision": "0c3afb5257634d6e3d28",
+    "revision": "d0f9852254783a19e379",
     "url": "/static/css/main.c57d7bbb.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "444464637fbf8b5c1867",
-    "url": "/static/js/2.127db32a.chunk.js"
+    "revision": "354679fa7b2f23872fdf",
+    "url": "/static/js/2.4edb541d.chunk.js"
   },
   {
     "revision": "44294c4a5a9257730c0dfcd249eeabbe",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/food-card.e164d1a1.jpg"
   },
   {
-    "revision": "0c3afb5257634d6e3d28",
-    "url": "/static/js/main.f8af8934.chunk.js"
+    "revision": "d0f9852254783a19e379",
+    "url": "/static/js/main.aba53e43.chunk.js"
   },
   {
     "revision": "067d813bc72c1f5b6cf3fdf2aba0d969",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/pb-card.fa249768.jpg"
   },
   {
-    "revision": "c308dc1414696083eb158303a91913a8",
+    "revision": "e0afe8354d5ae5d49dc94482faba43ce",
     "url": "/index.html"
   }
 ];
