@@ -1,5 +1,5 @@
 {
-  "main.css": "/static/css/main.b0f51939.chunk.css",
+  "main.css": "/static/css/main.be38b99d.chunk.css",
   "main.js": "/static/js/main.2a95b601.chunk.js",
   "main.js.map": "/static/js/main.2a95b601.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -7,8 +7,8 @@
   "static/js/2.b51e8c78.chunk.js": "/static/js/2.b51e8c78.chunk.js",
   "static/js/2.b51e8c78.chunk.js.map": "/static/js/2.b51e8c78.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.1e634c79585ab4072942c464f9329193.js": "/precache-manifest.1e634c79585ab4072942c464f9329193.js",
+  "precache-manifest.c54961f8cebe6daa62e1048d4517ea42.js": "/precache-manifest.c54961f8cebe6daa62e1048d4517ea42.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.b0f51939.chunk.css.map": "/static/css/main.b0f51939.chunk.css.map",
+  "static/css/main.be38b99d.chunk.css.map": "/static/css/main.be38b99d.chunk.css.map",
   "static/media/index.scss": "/static/media/wpm-card.41a175b7.jpg"
 }
