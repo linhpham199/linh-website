@@ -1,8 +1,23 @@
 .main-menu {
-  background-color: #FBF4D7;
+  background-color: $tertiary-color;
   height: 80vh;
   width: 100vw;
   overflow: auto;
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 375px) {
+  .main-menu {
+    height: 82vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .main-menu {
+    height: 85vh;
+  }
 }
 
 @media (min-width: 768px) {

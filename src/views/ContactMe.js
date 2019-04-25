@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import db  from '../firebase/firebase';
-
+import { FaPaperPlane } from 'react-icons/fa';
 class ContactMe extends Component {
   constructor(props) {
     super(props);
@@ -63,26 +63,24 @@ class ContactMe extends Component {
     const { shown, name, email, message, validated } = this.state
     const messageTitle = "Your message has been sent!"
     const messageContent = "I will get back to you as soon as possible. Thank you!"
-    const greetings = "Drop me a message :)"
+    const greetings = "Drop me a message"
     const disableBtn = validated || !name || !email || !message 
 
     return (
       <div className="container">
         <form className="form">
-          <p className="form__title">{greetings}</p>
+          <p className="heading-primary" style={{marginBottom: '3.5rem'}}>{greetings}</p>
           <p className="form__container">
+            <input className="form__input" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} placeholder="Your name" required/>
             <label htmlFor="name" className="form__label">Name</label>
-            <input className="form__input" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} required/>
           </p>
           <p className="form__container">
+            <input className="form__input" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange} placeholder="Your email address" required/>
             <label htmlFor="email" className="form__label">Email address</label>
-            <input className="form__input" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange} required/>
-          {console.log(this.validateEmail(this.state.email))}
-          {console.log("BTN " + disableBtn + " name " + !name + " email " + !email + " message " + !message)}
           </p>
           <p className="form__container">
+            <textarea className="form__text-area" name="message" rows="4" value={this.state.message} onChange={this.handleChange} placeholder="Write your message here"></textarea>
             <label htmlFor="message" className="form__label">Your message</label>
-            <textarea className="form__text-area" name="message" rows="7" value={this.state.message} onChange={this.handleChange}></textarea>
           </p>
           {
             shown && (
@@ -93,10 +91,11 @@ class ContactMe extends Component {
             )
           }
           <p className="form__container--btn">
-            <button type="submit" className="form__button" disabled={disableBtn} onClick={this.handleSubmit}>Send</button>
-          </p>
-          
-          
+            <button type="submit" className="form__button" disabled={disableBtn} onClick={this.handleSubmit}>
+              <FaPaperPlane style={{marginRight: '1rem', top: '5rem'}}/>
+              Send
+            </button>
+          </p> 
         </form>
         
       </div>

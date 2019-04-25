@@ -3,9 +3,88 @@
   margin: 2rem;
 }
 
-.my-languages {
-  &__list {
+.list {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+    }
+  
+}
+
+.heading-primary {
+  display: inline-block;
+
+  &::before {
+    content: "";
+    margin: 0 10%;
+    display: block;
+    border: 2px solid $secondary-color;
+    border-bottom: 0;
+    top: -1.3rem;
+    height: 1.3rem;
+  }
+
+  &::after {
+    content: "";
+    margin: 0 10%;    
+    display: block;
+    border: 2px solid $secondary-color;
+    border-top: 0;
+    bottom: -1.3rem;
+    height: 1.3rem;
+  }
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-education {
+  &__list-icon {
+    font-size: 2.5rem;
+    margin: 0 .2rem;
+    color: $secondary-color;
+    padding: 0 2px;
+
+    &-container {
+      display: inline-block;
+      margin-top: 1rem;
+
+      &::before {
+        content: "";
+        display: block;
+        height: .6rem;
+        border: 1px solid $secondary-color;
+        border-bottom: 0;
+        margin-bottom: -.4rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: .6rem;
+        border: 1px solid $secondary-color;
+        margin-top: -1.2rem;
+        border-top: 0;
+      }
+    } 
+  }
+}
+
+.my-languages {
+  &__list-icon {
+    color: $secondary-color;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
   }
 }
 
