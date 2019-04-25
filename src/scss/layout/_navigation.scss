@@ -134,7 +134,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
-      height: 100vh;
+      height: auto;
     }
 
     &__list {
