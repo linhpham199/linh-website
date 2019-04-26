@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/background-side.704cb45a.jpg"
   },
   {
-    "revision": "526cea9a2041bd7b436d",
-    "url": "/static/css/main.c5dab371.chunk.css"
+    "revision": "0fdd34f341c89ff43df5",
+    "url": "/static/css/main.38b0ba86.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/food-card.e164d1a1.jpg"
   },
   {
-    "revision": "526cea9a2041bd7b436d",
-    "url": "/static/js/main.2a95b601.chunk.js"
+    "revision": "0fdd34f341c89ff43df5",
+    "url": "/static/js/main.7fe56138.chunk.js"
   },
   {
     "revision": "067d813bc72c1f5b6cf3fdf2aba0d969",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/pb-card.fa249768.jpg"
   },
   {
-    "revision": "999902fc6c6c3db8c0153c3886038230",
+    "revision": "7296cfc6d4961a0372978e8c61540378",
     "url": "/index.html"
   }
 ];
