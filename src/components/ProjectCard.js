@@ -10,7 +10,7 @@ class ProjectCard extends Component {
         <div className={`card__side card__side--front card__side--front-${this.props.code}`}>
           <p className="card__title">
             {this.props.name}
-            <object className="card__link"><a href={this.props.link} className="card__link--mobile" target="_blank" rel="noopener noreferrer">More info &raquo;</a></object>              
+            {/* <object className="card__link"><a href={this.props.link} className="card__link--mobile" target="_blank" rel="noopener noreferrer">More info &raquo;</a></object>               */}
           </p>
         </div>
 
