@@ -115,6 +115,10 @@
   }
 }
 
+.active {
+  color: $secondary-color;
+}
+
 @media (min-width: 768px) {
   .navigation {
     &__button {
@@ -160,10 +164,15 @@
 
       &:hover,
       &:active {
-          background-position: 100%;
-          color: $primary-color;
-          transform: translateX(1rem);
+        background-position: 100%;
+        color: $primary-color;
+        transform: translateX(1rem);
       }
     }
+  }
+
+  .active {
+    background-color: $tertiary-color;
+    color: $primary-color;
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter, Link } from "react-router-dom";
+import { Route, HashRouter, NavLink } from "react-router-dom";
 import AboutMe from './views/AboutMe';
 import MyProjects from './views/MyProjects';
 import ContactMe from './views/ContactMe';
@@ -36,13 +36,13 @@ class App extends Component {
             <nav className="navigation__nav">
               <ul className="navigation__list">
                 <li className="navigation__item" >
-                  <Link className="navigation__list-item" to="/" onClick={this.toggleMenu}>About Me</Link>
+                  <NavLink className="navigation__list-item" activeClassName="active" exact to="/"  onClick={this.toggleMenu}>About Me</NavLink>
                 </li>
                 <li className="navigation__item">
-                  <Link className="navigation__list-item" to="/projects/" onClick={this.toggleMenu}>My Projects</Link>
+                  <NavLink className="navigation__list-item" activeClassName="active" to="/projects/" onClick={this.toggleMenu}>My Projects</NavLink>
                 </li>
                 <li className="navigation__item">
-                  <Link className="navigation__list-item" to="/contact/" onClick={this.toggleMenu}>Contact Me</Link>
+                  <NavLink className="navigation__list-item" activeClassName="active" to="/contact/" onClick={this.toggleMenu}>Contact Me</NavLink>
                 </li>
               </ul>
             </nav>

@@ -14,7 +14,7 @@
     &--web {
       pointer-events: none;
     }
-    
+
     &--mobile {
       color: $secondary-color;    
       text-transform: uppercase;
@@ -96,6 +96,10 @@
         background-size: cover;
         // background-position: right;
       }
+
+      &-flipped {
+        transform: rotateY(-180deg); 
+      }
     }
 
     &--back {
@@ -103,7 +107,10 @@
       transform: rotateY(180deg);
       display: flex;  
       flex-wrap: wrap;    
-      // border: 1px solid #980060;
+
+      &-flipped {
+        transform: rotate(0); 
+      }
     }
   }
 
@@ -134,7 +141,7 @@
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .card {
     &:hover &__side--front {
       transform: rotateY(-180deg);
@@ -157,6 +164,20 @@
         pointer-events: none;
         height: 0;
         opacity: 0;
+      }
+    }
+
+    &__side {
+      &--front {
+        &-flipped {
+          transform: rotateY(0) ;
+        }
+      }
+
+      &--back {
+        &-flipped {
+          transform: rotateY(180deg);
+        }
       }
     }
   }
